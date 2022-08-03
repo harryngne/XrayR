@@ -92,7 +92,7 @@ jobs:
       - name: Build XrayR
         run: |
           mkdir -p build_assets
-          go build -v -o build_assets/XrayR -trimpath -ldflags "-s -w -buildid=" ./XrayR
+          go build -v -o build_assets/XrayR -trimpath -ldflags "-s -w -buildid=" ./main
     
       - name: Build Mips softfloat XrayR
         if: matrix.goarch == 'mips' || matrix.goarch == 'mipsle'
