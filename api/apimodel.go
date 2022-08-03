@@ -72,6 +72,7 @@ type UserTraffic struct {
 	Email    string
 	Upload   int64
 	Download int64
+	Count    int64
 }
 
 type ClientInfo struct {

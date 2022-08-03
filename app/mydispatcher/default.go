@@ -176,6 +176,10 @@ func (d *DefaultDispatcher) getLink(ctx context.Context) (*transport.Link, *tran
 			outboundLink.Writer = d.Limiter.RateWriter(outboundLink.Writer, bucket)
 		}
 		p := d.policy.ForLevel(user.Level)
+		countName := "user>>>" + user.Email + ">>>request>>>count"
+		if c, _ := stats.GetOrRegisterCounter(d.stats, countName); c != nil {
+			c.Add(1)
+		}
 		if p.Stats.UserUplink {
 			name := "user>>>" + user.Email + ">>>traffic>>>uplink"
 			if c, _ := stats.GetOrRegisterCounter(d.stats, name); c != nil {
