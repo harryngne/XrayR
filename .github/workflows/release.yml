@@ -27,7 +27,7 @@ jobs:
       matrix:
         # Include amd64 on all platforms.
         goos: [windows, linux, darwin]
-        goarch: [amd64, 386]
+        goarch: [amd64]
         include:
           # BEIGIN MacOS ARM64
           - goos: darwin
@@ -51,12 +51,6 @@ jobs:
             goarch: arm
             goarm: 7
           # BEGIN Other architectures
-          #- goos: linux
-          #  goarch: ppc64
-          - goos: linux
-            goarch: ppc64le
-          # END PPC
-          # END FreeBSD ARM
           # BEGIN S390X
           - goos: linux
             goarch: s390x
