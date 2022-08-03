@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/XrayR-project/XrayR/api"
 	"github.com/bitly/go-simplejson"
 	"github.com/go-resty/resty/v2"
+	"github.com/harryngne/XrayR/api"
 )
 
 // APIClient create an api client to the panel.

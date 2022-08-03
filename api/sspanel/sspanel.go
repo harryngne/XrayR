@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/XrayR-project/XrayR/api"
 	"github.com/go-resty/resty/v2"
+	"github.com/harryngne/XrayR/api"
 )
 
 var (
