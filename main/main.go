@@ -23,7 +23,7 @@ var (
 )
 
 var (
-	version  = "0.0.4"
+	version  = "0.0.5"
 	codename = "XrayR"
 	intro    = "Con mèo tao đâu"
 )

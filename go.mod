@@ -19,7 +19,7 @@ require (
 	github.com/stretchr/testify v1.8.0
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/urfave/cli v1.22.9
-	github.com/xtls/xray-core v1.5.5
+	github.com/xtls/xray-core v1.5.6
 	golang.org/x/net v0.0.0-20220708220712-1185a9018129
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.28.1
@@ -78,6 +78,7 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/k0kubun/go-ansi v0.0.0-20180517002512-3bf9e2903213 // indirect
+	github.com/klauspost/cpuid/v2 v2.0.12 // indirect
 	github.com/kolo/xmlrpc v0.0.0-20201022064351-38db28db192b // indirect
 	github.com/labbsr0x/bindman-dns-webhook v1.0.2 // indirect
 	github.com/labbsr0x/goh v1.0.1 // indirect
@@ -123,6 +124,8 @@ require (
 	github.com/rogpeppe/go-internal v1.8.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sacloud/libsacloud v1.36.2 // indirect
+	github.com/sagernet/sing v0.0.0-20220528022605-7ba6439364fa // indirect
+	github.com/sagernet/sing-shadowsocks v0.0.0-20220528022643-c8403614f554 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.9 // indirect
 	github.com/seiflotfy/cuckoofilter v0.0.0-20220411075957-e3b120b3f5fb // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
@@ -164,6 +167,7 @@ require (
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	lukechampine.com/blake3 v1.1.7 // indirect
 )
 
 replace github.com/linode/linodego => github.com/linode/linodego v0.31.1
