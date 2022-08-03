@@ -19,7 +19,7 @@ require (
 	github.com/stretchr/testify v1.8.0
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/urfave/cli v1.22.9
-	github.com/xtls/xray-core v1.5.9
+	github.com/xtls/xray-core v1.5.5
 	golang.org/x/net v0.0.0-20220708220712-1185a9018129
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.28.1
