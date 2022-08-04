@@ -23,9 +23,9 @@ var (
 )
 
 var (
-	version  = "0.0.3"
+	version  = "0.0.7"
 	codename = "XrayR"
-	intro    = "Con mèo tao đâu"
+	intro    = "FastPN.net"
 )
 
 func showVersion() {
