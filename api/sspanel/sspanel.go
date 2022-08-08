@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/harryngne/XrayR/api"
+	"github.com/harryngne/XrayR-FastPN/api"
 )
 
 var (

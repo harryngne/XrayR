@@ -1,4 +1,4 @@
-module github.com/harryngne/XrayR
+module github.com/harryngne/XrayR-FastPN
 
 go 1.18
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/harryngne/XrayR/api"
-	"github.com/harryngne/XrayR/api/sspanel"
+	"github.com/harryngne/XrayR-FastPN/api"
+	"github.com/harryngne/XrayR-FastPN/api/sspanel"
 )
 
 func CreateClient() api.API {

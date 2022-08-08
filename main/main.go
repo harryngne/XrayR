@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/fsnotify/fsnotify"
-	"github.com/harryngne/XrayR/panel"
+	"github.com/harryngne/XrayR-FastPN/panel"
 	"github.com/spf13/viper"
 )
 

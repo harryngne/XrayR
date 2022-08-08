@@ -13,7 +13,7 @@ import (
 
 	"github.com/go-acme/lego/v4/certcrypto"
 	"github.com/go-acme/lego/v4/certificate"
-	"github.com/harryngne/XrayR/common/legocmd/log"
+	"github.com/harryngne/XrayR-FastPN/common/legocmd/log"
 	"github.com/urfave/cli"
 	"golang.org/x/net/idna"
 )
