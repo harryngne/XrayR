@@ -9,7 +9,7 @@ import (
 	"github.com/go-acme/lego/v4/certificate"
 	"github.com/go-acme/lego/v4/lego"
 	"github.com/go-acme/lego/v4/registration"
-	"github.com/harryngne/XrayR-FastPN/common/legocmd/log"
+	"github.com/harryngne/XrayR/common/legocmd/log"
 	"github.com/urfave/cli"
 )
 

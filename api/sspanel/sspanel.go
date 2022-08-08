@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/harryngne/XrayR-FastPN/api"
+	"github.com/harryngne/XrayR/api"
 )
 
 var (
@@ -257,7 +257,7 @@ func (c *APIClient) ReportNodeStatus(nodeStatus *api.NodeStatus) (err error) {
 	return nil
 }
 
-//ReportNodeOnlineUsers reports online user ip
+// ReportNodeOnlineUsers reports online user ip
 func (c *APIClient) ReportNodeOnlineUsers(onlineUserList *[]api.OnlineUser) error {
 	c.access.Lock()
 	defer c.access.Unlock()

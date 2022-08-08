@@ -1,8 +1,8 @@
 package panel
 
 import (
-	"github.com/harryngne/XrayR-FastPN/api"
-	"github.com/harryngne/XrayR-FastPN/service/controller"
+	"github.com/harryngne/XrayR/api"
+	"github.com/harryngne/XrayR/service/controller"
 )
 
 type Config struct {
