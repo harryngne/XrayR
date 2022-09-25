@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/XrayR-project/XrayR/common/legocmd/log"
 	"github.com/go-acme/lego/v4/certcrypto"
 	"github.com/go-acme/lego/v4/certificate"
-	"github.com/harryngne/XrayR/common/legocmd/log"
 	"github.com/urfave/cli"
 	"golang.org/x/net/idna"
 )
@@ -27,15 +27,16 @@ const (
 //
 // rootPath:
 //
-//	./.lego/certificates/
-//	     │      └── root certificates directory
-//	     └── "path" option
+//     ./.lego/certificates/
+//          │      └── root certificates directory
+//          └── "path" option
 //
 // archivePath:
 //
-//	./.lego/archives/
-//	     │      └── archived certificates directory
-//	     └── "path" option
+//     ./.lego/archives/
+//          │      └── archived certificates directory
+//          └── "path" option
+//
 type CertificatesStorage struct {
 	rootPath    string
 	archivePath string

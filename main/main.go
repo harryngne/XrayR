@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/XrayR-project/XrayR/panel"
 	"github.com/fsnotify/fsnotify"
-	"github.com/harryngne/XrayR/panel"
 	"github.com/spf13/viper"
 )
 
@@ -23,9 +23,9 @@ var (
 )
 
 var (
-	version  = "0.0.9"
+	version  = "0.8.4"
 	codename = "XrayR"
-	intro    = "FastPN.net"
+	intro    = "A Xray backend that supports many panels"
 )
 
 func showVersion() {
@@ -56,7 +56,7 @@ func getConfig() *viper.Viper {
 	}
 
 	if err := config.ReadInConfig(); err != nil {
-		log.Panicf("Fatal error config file: %s \n", err)
+		log.Panicf("Config file error: %s \n", err)
 	}
 
 	config.WatchConfig() // Watch the config
@@ -73,7 +73,9 @@ func main() {
 
 	config := getConfig()
 	panelConfig := &panel.Config{}
-	config.Unmarshal(panelConfig)
+	if err := config.Unmarshal(panelConfig); err != nil {
+		log.Panicf("Parse config file %s failed: %s \n", configFile, err)
+	}
 	p := panel.New(panelConfig)
 	lastTime := time.Now()
 	config.OnConfigChange(func(e fsnotify.Event) {
@@ -84,7 +86,9 @@ func main() {
 			p.Close()
 			// Delete old instance and trigger GC
 			runtime.GC()
-			config.Unmarshal(panelConfig)
+			if err := config.Unmarshal(panelConfig); err != nil {
+				log.Panicf("Parse config file %s failed: %s \n", configFile, err)
+			}
 			p.Start()
 			lastTime = time.Now()
 		}

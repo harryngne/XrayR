@@ -8,10 +8,10 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/harryngne/XrayR/api"
-	"github.com/harryngne/XrayR/api/sspanel"
-	_ "github.com/harryngne/XrayR/main/distro/all"
-	. "github.com/harryngne/XrayR/service/controller"
+	"github.com/XrayR-project/XrayR/api"
+	"github.com/XrayR-project/XrayR/api/sspanel"
+	_ "github.com/XrayR-project/XrayR/main/distro/all"
+	. "github.com/XrayR-project/XrayR/service/controller"
 	"github.com/xtls/xray-core/core"
 	"github.com/xtls/xray-core/infra/conf"
 )
@@ -62,7 +62,7 @@ func TestController(t *testing.T) {
 		NodeType: "V2ray",
 	}
 	apiclient := sspanel.New(apiConfig)
-	c := New(server, apiclient, controlerconfig)
+	c := New(server, apiclient, controlerconfig, "SSpanel")
 	fmt.Println("Sleep 1s")
 	err = c.Start()
 	if err != nil {

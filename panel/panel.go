@@ -6,15 +6,17 @@ import (
 	"log"
 	"sync"
 
-	"github.com/harryngne/XrayR/api"
-	"github.com/harryngne/XrayR/api/pmpanel"
-	"github.com/harryngne/XrayR/api/proxypanel"
-	"github.com/harryngne/XrayR/api/sspanel"
-	"github.com/harryngne/XrayR/api/v2board"
-	"github.com/harryngne/XrayR/app/mydispatcher"
-	_ "github.com/harryngne/XrayR/main/distro/all"
-	"github.com/harryngne/XrayR/service"
-	"github.com/harryngne/XrayR/service/controller"
+	"github.com/XrayR-project/XrayR/app/mydispatcher"
+
+	"github.com/XrayR-project/XrayR/api"
+	"github.com/XrayR-project/XrayR/api/pmpanel"
+	"github.com/XrayR-project/XrayR/api/proxypanel"
+	"github.com/XrayR-project/XrayR/api/sspanel"
+	"github.com/XrayR-project/XrayR/api/v2board"
+	"github.com/XrayR-project/XrayR/api/v2raysocks"
+	_ "github.com/XrayR-project/XrayR/main/distro/all"
+	"github.com/XrayR-project/XrayR/service"
+	"github.com/XrayR-project/XrayR/service/controller"
 	"github.com/imdario/mergo"
 	"github.com/r3labs/diff/v2"
 	"github.com/xtls/xray-core/app/proxyman"
@@ -171,6 +173,8 @@ func (p *Panel) Start() {
 			apiClient = pmpanel.New(nodeConfig.ApiConfig)
 		case "Proxypanel":
 			apiClient = proxypanel.New(nodeConfig.ApiConfig)
+		case "V2RaySocks":
+			apiClient = v2raysocks.New(nodeConfig.ApiConfig)
 		default:
 			log.Panicf("Unsupport panel type: %s", nodeConfig.PanelType)
 		}

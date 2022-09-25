@@ -1,19 +1,19 @@
-// Package generate the InbounderConfig used by add inbound
+//Package generate the InbounderConfig used by add inbound
 package controller
 
 import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/harryngne/XrayR/api"
-	"github.com/harryngne/XrayR/common/legocmd"
+	"github.com/XrayR-project/XrayR/api"
+	"github.com/XrayR-project/XrayR/common/legocmd"
 	"github.com/xtls/xray-core/common/net"
 	"github.com/xtls/xray-core/common/uuid"
 	"github.com/xtls/xray-core/core"
 	"github.com/xtls/xray-core/infra/conf"
 )
 
-// InboundBuilder build Inbound config for different protocol
+//InboundBuilder build Inbound config for different protocol
 func InboundBuilder(config *Config, nodeInfo *api.NodeInfo, tag string) (*core.InboundHandlerConfig, error) {
 	inboundDetourConfig := &conf.InboundDetourConfig{}
 	// Build Listen IP address
@@ -27,7 +27,7 @@ func InboundBuilder(config *Config, nodeInfo *api.NodeInfo, tag string) (*core.I
 
 	// Build Port
 	portList := &conf.PortList{
-		Range: []conf.PortRange{{From: uint32(nodeInfo.Port), To: uint32(nodeInfo.Port)}},
+		Range: []conf.PortRange{{From: nodeInfo.Port, To: nodeInfo.Port}},
 	}
 	inboundDetourConfig.PortList = portList
 	// Build Tag

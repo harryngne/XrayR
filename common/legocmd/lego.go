@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/harryngne/XrayR/common/legocmd/cmd"
+	"github.com/XrayR-project/XrayR/common/legocmd/cmd"
 	"github.com/urfave/cli"
 )
 
@@ -79,7 +79,7 @@ func (l *LegoCMD) DNSCert(domain, email, provider string, DNSEnv map[string]stri
 	}()
 	// Set Env for DNS configuration
 	for key, value := range DNSEnv {
-		os.Setenv(key, value)
+		os.Setenv(strings.ToUpper(key), value)
 	}
 	// First check if the certificate exists
 	CertPath, KeyPath, err = checkCertfile(domain)

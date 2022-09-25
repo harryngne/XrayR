@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/XrayR-project/XrayR/api"
 	"github.com/go-resty/resty/v2"
-	"github.com/harryngne/XrayR/api"
 )
 
 // APIClient create a api client to the panel.
@@ -234,7 +234,7 @@ func (c *APIClient) ReportNodeStatus(nodeStatus *api.NodeStatus) (err error) {
 	return nil
 }
 
-// ReportNodeOnlineUsers reports online user ip
+//ReportNodeOnlineUsers reports online user ip
 func (c *APIClient) ReportNodeOnlineUsers(onlineUserList *[]api.OnlineUser) error {
 	var nodeType = ""
 	switch c.NodeType {
@@ -411,10 +411,7 @@ func (c *APIClient) ParseV2rayNodeResponse(nodeInfoResponse *NodeInfoResponse) (
 
 // ParseSSNodeResponse parse the response for the given nodeinfor format
 func (c *APIClient) ParseSSNodeResponse(nodeInfoResponse *NodeInfoResponse) (*api.NodeInfo, error) {
-	var port int = 0
 	var speedlimit uint64 = 0
-
-	port = nodeInfoResponse.Port
 
 	if c.SpeedLimit > 0 {
 		speedlimit = uint64((c.SpeedLimit * 1000000) / 8)
@@ -425,7 +422,7 @@ func (c *APIClient) ParseSSNodeResponse(nodeInfoResponse *NodeInfoResponse) (*ap
 	nodeinfo := &api.NodeInfo{
 		NodeType:          c.NodeType,
 		NodeID:            c.NodeID,
-		Port:              port,
+		Port:              nodeInfoResponse.Port,
 		SpeedLimit:        speedlimit,
 		TransportProtocol: "tcp",
 		CypherMethod:      nodeInfoResponse.Method,
