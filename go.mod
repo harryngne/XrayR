@@ -6,7 +6,7 @@ require (
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/deckarep/golang-set v1.8.0
 	github.com/fsnotify/fsnotify v1.5.4
-	github.com/go-acme/lego/v4 v4.8.0
+	github.com/go-acme/lego/v4 v4.9.0
 	github.com/go-resty/resty/v2 v2.7.0
 	github.com/imdario/mergo v0.3.13
 	github.com/juju/ratelimit v1.0.2
@@ -42,6 +42,7 @@ require (
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/boombuler/barcode v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.1.3 // indirect
+	github.com/civo/civogo v0.3.11 // indirect
 	github.com/cloudflare/cloudflare-go v0.51.0 // indirect
 	github.com/cpu/goacmedns v0.1.1 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
@@ -69,7 +70,9 @@ require (
 	github.com/gophercloud/gophercloud v1.0.0 // indirect
 	github.com/gophercloud/utils v0.0.0-20220927104426-4113af8d2663 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
+	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
+	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/iij/doapi v0.0.0-20190504054126-0bbf12d6d7df // indirect
@@ -123,7 +126,10 @@ require (
 	github.com/refraction-networking/utls v1.1.2 // indirect
 	github.com/riobard/go-bloom v0.0.0-20200614022211-cdc8013cb5b3 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/sacloud/libsacloud v1.36.2 // indirect
+	github.com/sacloud/api-client-go v0.2.1 // indirect
+	github.com/sacloud/go-http v0.1.2 // indirect
+	github.com/sacloud/iaas-api-go v1.3.2 // indirect
+	github.com/sacloud/packages-go v0.0.5 // indirect
 	github.com/sagernet/sing v0.0.0-20220801112236-1bb95f9661fc // indirect
 	github.com/sagernet/sing-shadowsocks v0.0.0-20220801112336-a91eacdd01e1 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.9 // indirect
@@ -148,6 +154,8 @@ require (
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vultr/govultr/v2 v2.17.2 // indirect
 	github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837 // indirect
+	github.com/yandex-cloud/go-genproto v0.0.0-20220805142335-27b56ddae16f // indirect
+	github.com/yandex-cloud/go-sdk v0.0.0-20220805164847-cf028e604997 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.starlark.net v0.0.0-20220928063852-5fccb4daaf6d // indirect
