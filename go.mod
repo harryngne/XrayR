@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/deckarep/golang-set v1.8.0
-	github.com/fsnotify/fsnotify v1.5.4
+	github.com/fsnotify/fsnotify v1.6.0
 	github.com/go-acme/lego/v4 v4.8.0
 	github.com/go-resty/resty/v2 v2.7.0
 	github.com/imdario/mergo v0.3.13
@@ -15,8 +15,8 @@ require (
 	github.com/spf13/viper v1.13.0
 	github.com/stretchr/testify v1.8.0
 	github.com/urfave/cli v1.22.10
-	github.com/xtls/xray-core v1.6.0
-	golang.org/x/net v0.0.0-20220927171203-f486391704dc
+	github.com/xtls/xray-core v1.6.1
+	golang.org/x/net v0.1.0
 	google.golang.org/protobuf v1.28.1
 )
 
@@ -79,7 +79,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/k0kubun/go-ansi v0.0.0-20180517002512-3bf9e2903213 // indirect
 	github.com/klauspost/compress v1.15.11 // indirect
-	github.com/klauspost/cpuid/v2 v2.1.1 // indirect
+	github.com/klauspost/cpuid/v2 v2.1.2 // indirect
 	github.com/kolo/xmlrpc v0.0.0-20220921171641-a4b6fa1dd06b // indirect
 	github.com/labbsr0x/bindman-dns-webhook v1.0.2 // indirect
 	github.com/labbsr0x/goh v1.0.1 // indirect
@@ -87,11 +87,11 @@ require (
 	github.com/liquidweb/go-lwApi v0.0.5 // indirect
 	github.com/liquidweb/liquidweb-cli v0.6.10 // indirect
 	github.com/liquidweb/liquidweb-go v1.6.3 // indirect
-	github.com/lucas-clemente/quic-go v0.29.1 // indirect
+	github.com/lucas-clemente/quic-go v0.29.2 // indirect
 	github.com/lufia/plan9stats v0.0.0-20220913051719-115f729f3c8c // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
-	github.com/marten-seemann/qtls-go1-18 v0.1.2 // indirect
-	github.com/marten-seemann/qtls-go1-19 v0.1.0 // indirect
+	github.com/marten-seemann/qtls-go1-18 v0.1.3 // indirect
+	github.com/marten-seemann/qtls-go1-19 v0.1.1 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/miekg/dns v1.1.50 // indirect
 	github.com/mimuret/golang-iij-dpf v0.7.1 // indirect
@@ -120,7 +120,7 @@ require (
 	github.com/power-devops/perfstat v0.0.0-20220216144756-c35f1ee13d7c // indirect
 	github.com/pquerna/otp v1.3.0 // indirect
 	github.com/rainycape/memcache v0.0.0-20150622160815-1031fa0ce2f2 // indirect
-	github.com/refraction-networking/utls v1.1.2 // indirect
+	github.com/refraction-networking/utls v1.1.5 // indirect
 	github.com/riobard/go-bloom v0.0.0-20200614022211-cdc8013cb5b3 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sacloud/libsacloud v1.36.2 // indirect
@@ -150,20 +150,20 @@ require (
 	github.com/xtls/go v0.0.0-20220914232946-0441cf4cf837 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.opencensus.io v0.23.0 // indirect
-	go.starlark.net v0.0.0-20220928063852-5fccb4daaf6d // indirect
+	go.starlark.net v0.0.0-20221020143700-22309ac47eac // indirect
 	go.uber.org/ratelimit v0.2.0 // indirect
-	golang.org/x/crypto v0.0.0-20220926161630-eccd6366d1be // indirect
-	golang.org/x/exp v0.0.0-20220927162542-c76eaa363f9d // indirect
-	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
+	golang.org/x/crypto v0.1.0 // indirect
+	golang.org/x/exp v0.0.0-20221019170559-20944726eadf // indirect
+	golang.org/x/mod v0.6.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220909003341-f21342109be1 // indirect
-	golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/text v0.4.0 // indirect
 	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
-	golang.org/x/tools v0.1.12 // indirect
+	golang.org/x/tools v0.2.0 // indirect
 	google.golang.org/api v0.98.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20220927151529-dcaddaf36704 // indirect
-	google.golang.org/grpc v1.49.0 // indirect
+	google.golang.org/genproto v0.0.0-20221018160656-63c7b68cfc55 // indirect
+	google.golang.org/grpc v1.50.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/ns1/ns1-go.v2 v2.6.5 // indirect
 	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
